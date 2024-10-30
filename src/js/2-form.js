@@ -1,4 +1,5 @@
 const feedbackForm = document.querySelector('.feedback-form');
+console.log(feedbackForm);
 
 checkInputStart();
 
@@ -21,7 +22,7 @@ function sendUserInfo(event) {
   const message = feedbackForm.elements.message.value.trim();
 
   if (!email || !message) {
-    alert('Please, fill in all fields before sending!');
+    alert('Fill please all fields');
     return;
   }
 
